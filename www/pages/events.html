@@ -1,0 +1,97 @@
+<div class="page oag-bgdark" data-name="events">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon f7-icons ios-only">left</i>
+          <i class="fas fa-arrow-left text-color-white md-only"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title sliding"> OneAfrica Events</div>
+      <div class="right">
+        <a href="#" class="link icon-only panel-open text-color-white" data-panel="right">
+          <i class="icon f7-icons ios-only">person</i>
+          <i class="icon material-icons md-only">person</i>
+        </a>
+      </div>
+
+      <div class="subnavbar">
+        <!-- Searchbar with auto init -->
+        <form class="searchbar">
+          <div class="searchbar-inner">
+            <div class="searchbar-input-wrap">
+              <input type="search" placeholder="Search">
+              <i class="searchbar-icon"></i>
+              <span class="input-clear-button"></span>
+            </div>
+            <span class="searchbar-disable-button">Cancel</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content hide-toolbar-on-scroll">
+    <!-- Searchbar backdrop -->
+    <div class="searchbar-backdrop"></div>
+
+    <!-- search target list -->
+    <div class="list searchbar-found" id="show-here">
+      <script id="template" type="text/template7">
+              <li class="eventz margin-bottom">
+                  <a href="#" class="item-link item-content popup-open" data-popup={{dataPopup}}>
+                    <div class="item-media" style="border-radius: 50%; border: 1px solid var(--oag-light); width: 80px; height: 80px;">
+<img style="margin: auto;" src={{photo}} /></div>
+                    <div class="item-inner" style="flex-direction: column">
+                      <div class="item-title uppercase">{{name}}</div>
+                      <div class="item-title"><span class="oag uppercase medium">{{location}} </span><span class="light"> {{date}}</span></div>
+                      <div class="item-subtitle light">{{address}}</div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- load artist bio -->
+                <div class="popup bg-color-black {{dataClass}}">
+                  <!-- popup nav -->
+                  <div class="navbar">
+                    <div class="navbar-inner sliding">
+                      <div class="title">
+                       Tickets
+                      </div>
+                      <div class="right">
+                          <a class="link popup-close" href="#">Close</a>
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end popup nav -->
+                  <!-- popup body -->
+                  <div class="block text-color-white ticketz">
+                    <div class="row align-tickets">
+                      <img src="./img/partners/COKOBAR.png" class=" item-media col-50" id="cokobar" >
+                      {{cokobarButton}}
+                     </div>
+                     <div class="row ticket2 align-tickets">
+                      <img src="./img/partners/eventbrite.png" class=" item-media col-50" id="eventbrite" >
+                      {{eventbriteButton}}
+                     </div>
+                     <div class="row ticket3 align-tickets">
+                      <img src="./img/partners/ticketmaster.png" class=" item-media col-50" id="cokobar" >
+                       {{ticketmasterButton}}
+                     </div>
+                     <div class="row ticket4 align-tickets">
+                      <img src="./img/partners/platinumlist.png" class=" item-media col-50" id="platinumlist" >
+                       {{platinumlistButton}}
+                     </div>
+                  </div>
+                  <!-- end popup body -->
+      </script>
+    </div>
+    <!-- Nothing found message -->
+    <div class="block searchbar-not-found">
+      <div class="block-inner">Nothing found</div>
+    </div>
+
+  </div>
+</div>

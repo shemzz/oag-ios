@@ -1,0 +1,73 @@
+<div class="page kranium">
+  <div class="navbar main-nav">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon f7-icons ios-only">left</i>
+          <i class="fas fa-arrow-left text-color-white md-only"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title sliding">Payment</div>
+      <div class="right">
+        <a href="#" class="link icon-only panel-open text-color-white" data-panel="right">
+          <i class="icon f7-icons ios-only">person</i>
+          <i class="icon material-icons md-only">person</i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content text-color-white">
+    <div class="block">
+      <p class="text-align-center">Enter your email and Choose Preffered Method of Payment</p>
+      <p class="stepper-small text-color-orange">Please Note that Paystack is only Available in Nigeria.</p>
+    </div>
+    <form class="display-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: -50px;">
+      <div class="list stream-form">
+        <ul>
+          <li class="item-content item-input item-input-with-value margin-bottom">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <input type="email" placeholder="Enter your email" id="email_field" class="input-with-value">
+                <span class="input-clear-button"></span>
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner margin-top">
+              <div class="item-input-wrap">
+                <select name="choosepayment" id="choosepayment" class="margin-top">
+                  <option value="preffered" selected disabled>Select Payment method</option>
+                  <option value="paystack">Paystack</option>
+                  <option value="stripe">Stripe</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="proceed-payment button button-round oagdark-button centered" >proceed</a>
+      </div>
+        <p class="show-email text-align-center"></p>
+
+    </form>
+    <div class="show-stripe">
+      <form action="/charge" method="post" id="payment-form">
+        <div class=" block notification-iconform-row">
+          <label for="card-element text-color-white centered">
+            Credit or debit card
+          </label>
+          <div id="card-element">
+            <!-- A Stripe Element will be inserted here. -->
+          </div>
+
+          <!-- Used to display form errors. -->
+          <div id="card-errors" role="alert"></div>
+        </div>
+        <div class="block">
+          <button class="button button-round oagdark-button centered">Pay</button>
+        </div>
+      </form>
+    </div>
+    <div id="paystackEmbedContainer"></div>
+  </div>
+</div>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; script-src * 'unsafe-eval' 'unsafe-inline'; connect-src *; img-src *; style-src * 'unsafe-inline' ; media-src * data: gap: content"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>One Africa Mobile</title>
+
+<link rel="stylesheet" href="css/please-wait.css">
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/Poppins/fonts.css">
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <!-- Jquery for music -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Include Amplitude JS -->
+  <script type="text/javascript" src="js/amplitude.min.js"></script>
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+</head>
+
+<body>
+      <div id="app" class="inner" >
+          <!-- Status bar overlay for fullscreen mode-->
+          <div class="statusbar"></div>
+          <!-- Left panel with cover effect-->
+          <div class="panel panel-left panel-cover">
+            <div class="view">
+              <div class="page oag-bgdark" data-name="discover">
+                <div class="page-content">
+                  <div class="list">
+                    <ul>
+                      <li>
+                        <a href="/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/OAg app logo.png" width="47" height="42">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">Discover OAG</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/oamf/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/MENU-OAMF.png" width="47" height="42">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">One Africa Music Fest</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/1m1s/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/MENU-1M1S.png" width="47" height="42">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">1Music1Sound</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/gcf/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/MENU-GCF.png" width="47" height="42">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">Global Comedy Fest</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/oagf/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/MENU-OAGF.png" width="47" height="42">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">Global Foundation</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/projects/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/MENU-PROJECT.png" width="30">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">Projects</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.oneafricaglobal.com/home/OAMF-win-big.php" class="link external item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/MENU-OABW.png" width="30">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">One Africa BigWIN</div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- <li>
+                        <a href="/livechat/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/MENU-ONLINEASSIST.png" width="30">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">Virtual Assistant</div>
+                          </div>
+                        </a>
+                      </li> -->
+                      <li>
+                        <a href="#" class="item-link item-content left-menu panel-close contact-email">
+                          <div class="item-media">
+                            <img src="img/MENU-CONTACT.png" width="30">
+                            </i>
+                          </div>
+                          <div class="item-text">
+                            <div class="item-title">Contact Support</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/feed/" class="item-link item-content left-menu panel-close">
+                          <div class="item-media">
+                            <img src="img/livefeed.png" width="30">
+                            </i>
+                          </div>
+                          <div class="item-text ">
+                            <div class="item-title">Newsfeed</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right panel with cover effect-->
+          <div class="panel panel-right panel-cover theme-dark">
+            <div class="view">
+              <div class="page bg-color-white">
+                <div class="navbar">
+                  <div class="navbar-inner bg-color-white">
+                    <div class="left">
+                      <a href="#" class="chip" style="background-color: #145884;">
+                        <div class="chip-media">
+                          <img src="img/f.png" class="bg-color-white">
+                        </div>
+                        <div class="chip-label">Facebook</div>
+                      </a>
+                    </div>
+                    <div class="right">
+                      <a href="#" class="settings-page link icon-only oag" data-panel="right">
+                        <i class="icon f7-icons ios-only">gear_fill</i>
+                        <i class="icon material-icons md-only">settings</i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="toolbar tabbar theright">
+                  <div class="toolbar-inner">
+                    <a href="#favourites" class="tab-link tab-link-active">Favourites</a>
+                    <a href="#notification" class="tab-link">Notification</a>
+                  </div>
+                </div>
+                <div class="tabs-animated-wrap padding-top">
+                  <div class="tabs">
+                    <div id="favourites" class="page-content tab tab-active">
+                      <div class="block margin-top padding-top">
+                        <p class="text-color-black">No Favourites Yet</p>
+                      </div>
+                    </div>
+                    <div id="notification" class="page-content tab">
+                      <div class="block margin-top padding-top">
+                        <p class="text-color-black">No Notifications Yet</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Your main view, should have "view-main" class -->
+          <div class="view view-main  ios-edges">
+            <!-- Page, data-name contains page name which can be used in callbacks -->
+            <div class="page wizkid" data-name="home" id="homepage"
+              <!-- Top Navbar -->
+              <div class="navbar main-nav">
+                <div class="navbar-inner">
+                  <div class="left">
+                    <a href="#" class="link icon-only panel-open text-color-white" data-panel="left">
+                      <i class="icon f7-icons ios-only">menu</i>
+                      <i class="icon material-icons md-only">menu</i>
+                    </a>
+                  </div>
+                  <div class="title sliding">One Africa Global</div>
+                  <div class="right">
+                    <a href="#" class="link icon-only panel-open text-color-white" data-panel="right">
+                      <i class="icon f7-icons ios-only">person</i>
+                      <i class="icon material-icons md-only">person</i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Scrollable page content-->
+              <div class="page-content">
+                <div class="row discover">
+                  <div class="col-33">
+                    <a href="/about-oag/">
+                      <p>
+                        <i class="fas fa-4x fa-info-circle oag"></i>
+                      </p>
+                      <p>ABOUT OAG</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="/livestream/">
+                      <p>
+                        <i class="fas fa-rss fa-4x oag"></i>
+                      </p>
+                      <p>LIVE FEED</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="/events/">
+                      <p>
+                        <i class="fas fa-id-card-alt fa-4x oag"></i>
+                      </p>
+                      <p>TICKET</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="/lineup/">
+                      <p>
+                        <i class="fas fa-users fa-4x oag"></i>
+                      </p>
+                      <p>LINE UP</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="/music/">
+                      <p>
+                        <i class="fas fa-music fa-4x oag"></i>
+                      </p>
+                      <p>MUSIC</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="/gallery/">
+                      <p>
+                        <i class="fas fa-images fa-4x oag"></i>
+                      </p>
+                      <p>GALLERY</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="#" class="mailing-list">
+                      <p>
+                        <i class="fas fa-newspaper fa-4x oag"></i>
+                      </p>
+                      <p>MAILING LIST</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="/partner/">
+                      <p>
+                        <i class="fas fa-handshake fa-4x oag"></i>
+                      </p>
+                      <p >BE A PARTNER</p>
+                    </a>
+                  </div>
+                  <div class="col-33">
+                    <a href="#" class="social-connect">
+                      <p>
+                        <i class="fas fa-share-alt fa-4x oag"></i>
+                      </p>
+                      <p>GET SOCIAL</p>
+                    </a>
+                  </div>
+                </div>
+  
+                <!-- Livechat display
+                <a href="/livechat/" class="livechat">
+                  <img src="img/livechat.png" width="70">
+                </a> -->
+              </div>
+              <!-- Discover page Footer -->
+              <div class="row oag-bgdark footbar">
+                <div>
+                  <p>One Africa Music Fest returns to NewYork!!!</p>
+                  <p>One Africa Music Fest Dubai, Coming through!!!</p>
+                </div>
+              </div>
+              <!-- end Discover page footer -->
+            </div>
+          </div>
+        </div>
+
+  <!-- Please wait preloader -->
+  <script src="js/please-wait.min.js"></script>
+  <script type="text/javascript">
+    var loading_screen = pleaseWait({
+  logo: "img/OAg app logo.png",
+  backgroundColor: '#0C1223',
+  loadingHtml: '<p class="loading-message" style="color: white;"></p> <div class="sk-cube-grid"><div class="sk-cube sk-cube1"></div><div class="sk-cube sk-cube2"></div><div class="sk-cube sk-cube3"></div> <div class="sk-cube sk-cube4"></div><div class="sk-cube sk-cube5"></div><div class="sk-cube sk-cube6"></div><div class="sk-cube sk-cube7"></div><div class="sk-cube sk-cube8"></div><div class="sk-cube sk-cube9"></div></div>'
+});
+    setTimeout(() => {
+      loading_screen.finish();
+}, 5000);
+  </script>
+  <!-- Cordova -->
+  <script src="js/index.js"></script>
+  <!--
+  <script src="cordova.js"></script>
+  -->
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!--Paystack  -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
+  <!-- Stripe -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
